@@ -18,11 +18,11 @@ make clean
 ####或者自己手写insmod和rmmod：
 ```shell
 make
-gcc -o mymod mymod.c
+gcc -o mod mod.c
 dmesg
-sudo ./mymod -i k.ko
+sudo ./mod -i k.ko
 dmesg
-sudo ./mymod -r k
+sudo ./mod -r k
 dmesg
 make clean
 ```
