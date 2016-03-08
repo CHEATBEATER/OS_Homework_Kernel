@@ -93,11 +93,11 @@ oops:
 void usage(void) {
 
     fprintf(stderr,
-            "usage: lu_module -i[r] module_name\n"
+            "usage: mod -i[r] module_name\n"
             "\n"
             "examples:\n"
-            " 1.lu_module -i module_name # install module to kernel\n"
-            " 2.lu_module -r module_name # remove module from kernel\n"
+            " 1.mod -i module_name # install module to kernel\n"
+            " 2.mod -r module_name # remove module from kernel\n"
             "\n"
            );
     exit(1);
