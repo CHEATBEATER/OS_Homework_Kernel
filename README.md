@@ -20,9 +20,9 @@ make clean
 make
 gcc -o mymod mymod.c
 dmesg
-./mymod -i k.ko
+sudo ./mymod -i k.ko
 dmesg
-./mymod -r k
+sudo ./mymod -r k
 dmesg
 make clean
 ```
