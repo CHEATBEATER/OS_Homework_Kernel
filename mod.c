@@ -11,6 +11,7 @@ static int rmmod(const char *modname);
 void usage(void);
 
 int main(int argc, char *argv[]) {
+    
     const char *action = argv[1];
     const char *filename = argv[2];
     if ( (argc != 3) || (strcmp(action, "-i") && strcmp(action, "-r")) ){
@@ -26,6 +27,7 @@ int main(int argc, char *argv[]) {
 }
 
 static int insmod(const char *filename) {
+    
     void *module;
     unsigned int size;
     int ret;
@@ -41,6 +43,7 @@ static int insmod(const char *filename) {
 }
 
 static int rmmod(const char *modname) {
+    
     int ret = -1;
     int maxtry = 10;
 
@@ -61,6 +64,7 @@ static int rmmod(const char *modname) {
 }
 
 void *load_file(const char *fn, unsigned *_sz) {
+    
     char *data;
     int sz;
     int fd;
