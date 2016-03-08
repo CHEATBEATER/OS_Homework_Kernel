@@ -1,4 +1,4 @@
-obj-m += kernel.o
+obj-m += k.o
 #generate the path
 CURRENT_PATH:=$(shell pwd)
 #the current kernel version number
